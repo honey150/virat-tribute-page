@@ -1,0 +1,443 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+   background: linear-gradient(to bottom, #1e5799 0%,#1e5799 50%);
+   font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  width: clamp(300px, 70vw, 1200px);
+  margin: 25px auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+header:hover {
+box-shadow: 2px 2px 4px 5px rgba(35, 126, 211, 0.9)
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+background-color: hsl(195, 75%, 46%);
+padding: 0.3rem 0.6rem;
+color: #fff;
+border-radius: 0.5rem;
+}
+
+.logo img {
+  width: 55px;
+}
+
+.divider {
+   border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+/* Home Section CSS */
+
+#home {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding: 0 2rem;
+}
+
+
+
+.left {
+  position: absolute;
+  font-family:  cursive;
+  top: 50%;
+  left: 6vw;
+  transform: translateY(-50%);
+}
+
+.name {
+  font-size: 25vmax;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.5;
+ 
+}
+
+.first {
+  text-align: left;
+}
+
+.last {
+  text-align: right;
+  
+}
+
+
+.playername-border {
+  position: absolute;
+  top: 0;
+  left: 2vmax;
+}
+
+#home-image {
+width: 45vmax;
+position: absolute;
+bottom: 0;
+right: 3rem;
+}
+
+#virat-sign {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+}
+
+#virat-sign > img {
+  width: 14vmax;
+   -webkit-filter: invert(100%); 
+    filter: invert(100%);
+}
+
+#title {
+  color: #fff;
+  font-size: 4vmax;
+}
+
+/* About Section CSS */
+
+#tribute-info {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+   background: linear-gradient(to bottom, #1e5799 0%,#1e5799 50%);
+   padding: 0 2rem;
+}
+
+
+#tribute-info h2, 
+#virat-career h2,
+#virat-stats h2 {
+ 
+  display: inline-block;
+  margin: 20px auto;
+  font-size: 3vmax;
+  color: #fff;
+  padding: 0.8rem;
+  border-bottom: 2px solid #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#virat-bio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  
+}
+
+#about-virat {
+  position: relative;
+}
+
+.about-page {
+  border-bottom: 1px solid green;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#bio-image > img {
+  width: 36vw;
+  
+}
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  font-size: 2.8vmax;
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid white;
+  margin-bottom: 1rem;
+}
+
+.bio-details {
+  padding: 1rem;
+  border: 2px solid #fff;
+  backdrop-filter: blur(10px);
+  width: clamp(300px, 60vw, 700px);
+}
+
+.bio-details .bio:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.bio-details .bio:nth-of-type(2n) .ans {
+  text-align: left;
+}
+
+.bio .ans {
+  font-size: 1.7vmax;
+  text-align: right;
+}
+
+/* Virat Achievements CSS */
+
+#virat-career {
+  text-align: center;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#virat-career #virat-achievements:nth-of-type(1n) {
+  flex-direction: row;
+  
+}
+
+#virat-career #virat-achievements:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+#virat-achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(300px, 50%, 60vw);
+  gap: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid white;
+  background-color: rgba(255,255,255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+}
+
+#virat-career #virat-achievements:nth-of-type(3) {
+  flex-direction: column;
+  gap: 0;
+  padding: 2rem 2rem 1rem;
+}
+
+#virat-career #virat-achievements:nth-of-type(3)  .achievement-details {
+  width: 100%;
+}
+
+
+
+
+.achievement-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  
+}
+
+.achievement-details {
+  width: 55%;
+}
+
+.achievement-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.achievement-heading {
+  font-size: 2vmax;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.achievement-details ul li {
+color: #fff;
+font-size: 0.8rem;
+margin: 1rem 0;
+text-align: left;
+}
+
+.achievement-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
+}
+
+/* Virat Stats CSS */
+
+#virat-stats {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+
+.stats-icon {
+  width: 12vmax;
+  height: 12vmax;
+  border-radius: 6vmax;
+  text-align: center;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#img-caption {
+  color: #fff;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.stats-image
+ {
+  width: 120px;
+}
+
+.ipl-stats .stats-image {
+  width: 85px;
+}
+
+.test-stats .stats-image,
+ .t20-stats .stats-image
+  {
+  width: 150px;
+}
+
+.odi-stats, .test-stats, .t20-stats,
+.ipl-stats  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-image img {
+  width: 100%;
+}
+
+.virat-test-image img {
+  width: 100%;
+  display: block;
+}
+
+.stats-title {
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  border-top: 1px solid #fff
+}
+
+.stats-table, .bowling-stats-table {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-gap: 10px;
+  padding: 1rem;
+  border: 2px solid #fff;
+  font-size: 1vw;
+  color: #fff;
+  border-radius: 1rem;
+  font-weight: 700;
+  width: clamp(300px, 60%, 60vw);
+
+}
+
+/* Virat Bowl Stats CSS */
+
+
+
+.bowling-stats-table {
+  width: clamp(300px, 70%, 70vw);
+  margin: 0 auto;
+  font-size: 1vw;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* Footer Section CSS */
+
+#tribute-info {
+  padding: 0 2rem;
+  color: #fff;
+
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: hsla(60, 93%, 50%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#tribute-link:visit {
+  color: hsl(112, 79%, 49%);
+}
+
+#tribute-link:hover {
+color: hsla(60, 93%, 40%);
+}
+
